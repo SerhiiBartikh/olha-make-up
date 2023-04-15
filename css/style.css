@@ -1,0 +1,127 @@
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* width: 1280px; */
+    margin: 0 auto;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    /* color: black; */
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* border: 1px solid red; */
+  }
+
+  /* ============header+================ */
+  .header{
+    padding: 30px 0 30px 0;
+
+   
+    
+  }
+  .nav-list{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+  }
+  .nav-link{
+   
+    font-size: 24px;
+    line-height: 28px;
+    
+    color:#13381f;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus{
+    color:  #070707;
+  }
+
+
+
+  /* --------------------header---------- */
+  .main{
+    
+  }
+  .section-name{
+    padding: 40px 0 40px 0;
+  }
+
+  .name{
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+  }
+  .name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name-text{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+  }
+
+  .name-language{
+    transform: rotate(-90deg);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #070707;
+
+    
+  }
+
+
+
+  .section-first{
+    /* position: absolute; */
+ 
+    height: 500px ;
+    width: 100%;
+    background-image: url(/img/IMG_4305.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
