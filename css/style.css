@@ -52,6 +52,7 @@ body {
   /* ============header+================ */
   .header{
     padding: 30px 0 30px 0;
+    background-color: hsl(0, 0%, 96%, 0.3);
 
    
     
@@ -69,12 +70,68 @@ body {
     font-size: 24px;
     line-height: 28px;
     
-    color:#13381f;
+    color:#9fa09f;
+  }
+
+  @keyframes changeBgColor {
+    0% {
+      color: rgb(9, 172, 22);
+    }
+  
+ 
+  
+    100% {
+      color: rgb(7, 104, 39);
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translatex(-300PX);
+    }
+  
+    100% {
+      transform: translatex(0);
+    }
+  }
+
+  @keyframes move-right {
+    0% {
+      transform: translatex(300PX)
+    }
+  
+    100% {
+      transform: translatex(0)
+    }
+  }
+
+  @keyframes move-rotate {
+    0% {
+      rotate: (0deg) ; 
+    }
+  
+    100% {
+      rotate: (180deg);
+    }
+  }
+
+  @keyframes bg-img {
+    0% {
+      opacity: 0%;
+    }
+  
+    100% {
+      opacity: 100%;
+    }
   }
 
   .nav-link:hover,
   .nav-link:focus{
     color:  #070707;
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
 
@@ -91,6 +148,10 @@ body {
     font-size: 47.3392px;
     line-height: 59px;
     color: #070707;
+
+    animation-name: move;
+    animation-duration: 1000ms;
+    animation-timing-function:unset
   }
   .name-container{
     display: flex;
@@ -106,10 +167,20 @@ body {
 
   .name-language{
     transform: rotate(-90deg);
+    transform-origin: ;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: #070707;
+
+    animation-name: move-right;
+    animation-duration: 1000ms;
+    animation-timing-function: unset;
+
+ 
+
+    
+ 
 
     
   }
@@ -125,11 +196,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+
+    animation-name:bg-img;
+    animation-duration: 3000ms;
+    animation-timing-function:unset
   }
 
   .section-about{
     padding: 120px 0 120px 0;
-    background-color: #F6F6F6;
+    background-color: hsl(0, 0%, 96%, 0.3);
   }
 
   .about-container{
@@ -145,6 +221,8 @@ body {
 
     color: #070707;
     margin-bottom: 50px;
+
+   
   }
 
   .about-text{
@@ -162,3 +240,4 @@ body {
   .about-text:not(:last-child){
     margin-bottom: 50px;
   }
+
