@@ -1,5 +1,5 @@
 body {
-    width: 1980px;
+    /* width: 1980px; */
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     /* width: 1280px; */
@@ -42,7 +42,7 @@ body {
   }
   
   .container {
-    width: 1280px;
+    /* width: 1280px; */
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -160,8 +160,8 @@ body {
   }
 
   .name-text{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
     color: #070707;
   }
 
