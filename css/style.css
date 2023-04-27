@@ -160,24 +160,30 @@ body {
   }
 
   .name-text{
+    
+    
     font-size: 12px;
     line-height: 16px;
     color: #070707;
   }
 
+
   .name-language{
+    
+    
+    
     transform: rotate(-90deg);
-    transform-origin: ;
+   
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: #070707;
 
+   
+
     animation-name: move-right;
     animation-duration: 1000ms;
     animation-timing-function: unset;
-
- 
 
     
  
